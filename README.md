@@ -45,7 +45,7 @@ Pipelines scheduled via triggers
 
 ADF loads raw data into ADLS Bronze Layer.
 
-4. Storage Layer – Azure Data Lake Storage (ADLS Gen2)
+3. Storage Layer – Azure Data Lake Storage (ADLS Gen2)
 
 Data is stored in hierarchical structure:
 
@@ -83,7 +83,7 @@ Silver Layer: Cleaned, validated, conformed data.
 
 Gold Layer: Business-ready aggregated data for reporting.
 
-5. Transformation Logic
+ Transformation Logic
    
 Data cleaning & validation
 
@@ -95,7 +95,7 @@ Create fact table with transaction-product-store mapping
 
 Optimize PySpark jobs using partitioning and caching
 
-7. Reporting Layer – Power BI
+5. Reporting Layer – Power BI
 
 Power BI connects to Gold Layer to build dashboards such as:
 
