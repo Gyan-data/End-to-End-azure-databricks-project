@@ -34,19 +34,27 @@ Customer Data
 
 2. Ingestion Layer – Azure Data Factory (ADF)
 ADF is used to orchestrate ingestion using:
+
 Copy Activity
+
 REST API Linked Service
+
 Azure SQL linked services
+
 Pipelines scheduled via triggers
+
 ADF loads raw data into ADLS Bronze Layer.
 
-3. Storage Layer – Azure Data Lake Storage (ADLS Gen2)
+4. Storage Layer – Azure Data Lake Storage (ADLS Gen2)
 
 Data is stored in hierarchical structure:
 
-/raw/transaction/  
+/raw/transaction/ 
+
 /raw/product/  
+
 /raw/store/  
+
 /raw/customer/  
 
 All records are stored as-is for audit and reprocessing.
@@ -75,20 +83,28 @@ Silver Layer: Cleaned, validated, conformed data.
 
 Gold Layer: Business-ready aggregated data for reporting.
 
-5. Transformation Logic 
+5. Transformation Logic
+   
 Data cleaning & validation
+
 Convert JSON API payload into tabular format
+
 Create unified customer dimension
+
 Create fact table with transaction-product-store mapping
+
 Optimize PySpark jobs using partitioning and caching
 
-6. Reporting Layer – Power BI
+7. Reporting Layer – Power BI
 
 Power BI connects to Gold Layer to build dashboards such as:
 
 Sales Analysis
+
 Store Performance
+
 Product Performance
+
 Customer Segmentation
 
 Dataflows and scheduled refresh are configured for automation.
@@ -107,10 +123,6 @@ Dataflows and scheduled refresh are configured for automation.
 │
 ├── powerbi_reports  
 │   ├── dashboards.pbix  
-│
-├── docs  
-│   ├── architecture.png  
-│   ├── ERD.png  
 │
 └── README.md
 
