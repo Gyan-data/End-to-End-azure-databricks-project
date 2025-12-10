@@ -21,11 +21,15 @@ Build dashboards in Power BI for business decision-making.
 1. Data Sources
    
 Azure SQL DB
+
 Transaction Table
+
 Product Table
+
 Store Table
 
 2. REST API (JSON)
+   
 Customer Data
 
 4. Ingestion Layer – Azure Data Factory (ADF)
