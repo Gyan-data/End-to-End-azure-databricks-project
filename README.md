@@ -17,15 +17,18 @@ Load curated business-level data into Gold Layer for reporting.
 Build dashboards in Power BI for business decision-making.
 
 **Solution Architecture (Step-by-Step)**
+
 1. Data Sources
+   
 Azure SQL DB
 Transaction Table
 Product Table
 Store Table
 
-REST API (JSON)
+2. REST API (JSON)
 Customer Data
-3. Ingestion Layer – Azure Data Factory (ADF)
+
+4. Ingestion Layer – Azure Data Factory (ADF)
 ADF is used to orchestrate ingestion using:
 Copy Activity
 REST API Linked Service
@@ -33,7 +36,7 @@ Azure SQL linked services
 Pipelines scheduled via triggers
 ADF loads raw data into ADLS Bronze Layer.
 
-4. Storage Layer – Azure Data Lake Storage (ADLS Gen2)
+5. Storage Layer – Azure Data Lake Storage (ADLS Gen2)
 
 Data is stored in hierarchical structure:
 
