@@ -49,13 +49,13 @@ ADF loads raw data into ADLS Bronze Layer.
 
 Data is stored in hierarchical structure:
 
-/raw/transaction/ 
+/retail/transaction/ 
 
-/raw/product/  
+/retail/product/  
 
-/raw/store/  
+/retail/store/  
 
-/raw/customer/  
+/retail/customer/  
 
 All records are stored as-is for audit and reprocessing.
 
@@ -68,8 +68,6 @@ Incremental ingestion
 Data cleaning
 
 Null handling
-
-Schema enforcement
 
 Joins across customer, store, and product
 
@@ -87,13 +85,9 @@ Gold Layer: Business-ready aggregated data for reporting.
    
 Data cleaning & validation
 
-Convert JSON API payload into tabular format
-
 Create unified customer dimension
 
 Create fact table with transaction-product-store mapping
-
-Optimize PySpark jobs using partitioning and caching
 
 5. Reporting Layer – Power BI
 
@@ -101,7 +95,7 @@ Power BI connects to Gold Layer to build dashboards such as:
 
 Sales Analysis
 
-Store Performance
+Total quantity sold
 
 Product Performance
 
@@ -132,6 +126,6 @@ A fully automated, scalable, production-ready retail data pipeline enabling fast
 
 **Gyan Singh**
 
-Azure Data Engineer | Data Engineering | ADF | Databricks | PySpark | Azure SQL
+ Data Engineer | Azure/AWS | ADF | Databricks | PySpark | SQL
 
 
