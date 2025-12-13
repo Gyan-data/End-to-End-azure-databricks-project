@@ -1,5 +1,8 @@
 # End-to-End Retail Data Pipeline Using Azure Data Factory, ADLS, Databricks & Power BI
 
+<img width="1151" height="604" alt="image" src="https://github.com/user-attachments/assets/ba8b6599-dbca-455e-a8ba-7548504c4680" />
+
+
 **Project Overview**
 
 This project demonstrates how to build a complete end-to-end data engineering pipeline for a retail client using Azure cloud services.
